@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MER: ERROR404</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- IMPORTS BOOTSTRAP STYLE SHEETS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- SMOOTH SCROLL LIBRARY-->
+		<link rel="stylesheet" type="text/css" href="ecostyle.css"> <!-- IMPORTS EXTERNAL STYLE SHEET -->
+		
+		<!--JAVA SCRIPT FOR SMOOTH SCROLLING WITH ANCHOR TAG NAVIGATION -->
+		<script type="text/javascript">
+			  $(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+				  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+					  $('html,body').animate({
+						scrollTop: target.offset().top
+					  }, 500);
+					  return false;
+					}
+				  }
+				});
+			  });
+		</script>
+	</head>
+	
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #676767">
+		
+		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-header -->
+		<div id="pageheader" class="container-fluid bg-header text-center">
+		  	<a href="index.html">
+				<img src="Resources/Images/ECORACINGLOGOwtransparency.png" class="img-responsive margin" style="display: inline"  width="400" alt="Eco-Racing_Symbol">
+			</a>
+		</div>
+		
+		<!-- NAVIGATION BAR --
+		<nav class="navbar navbar-default bg-nav" data-spy="affix" data-offset-top="197">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand navbar-home" href="#pageheader" style="color: #949494;">Home</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar" >
+					<ul class="nav navbar-nav navbar-right navactive">
+						<li><a href="#projects" style="color: white;">Projects</a></li>
+						<li><a href="#meettheteam" style="color: white;">Meet The Team</a></li>
+						<li><a href="#sponsors" style="color: white;">Sponsors</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav> -->
+		
+		
+		<!-- BODY OF PAGE, CONTAINS... -->
+		<div class="container-fluid text-center">
+		
+			<br>
+			<h2>ERROR 404:</h2>
+			<br>
+			<h4 style="color: red">THE TARGET PAGE IS UNAVAILBLE RIGHT NOW.</h4>
+			<h4 style="color: red">WE APOLOGIZE FOR THE INCONVENIENCE.</h4>
+			<br>
+			<h3>Click the logo above to return to the Eco-Racing homepage.</h3>
+						
+			
+			
+
+	</body>
+</html>

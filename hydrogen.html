@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MER: Electric Car Team</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- IMPORTS BOOTSTRAP STYLE SHEETS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- SMOOTH SCROLL -->		
+		<link rel="stylesheet" type="text/css" href="ecostyle.css"> <!-- IMPORTS EXTERNAL STYLE SHEET -->
+		
+		<!--JAVA SCRIPT FOR SMOOTH SCROLLING WITH ANCHOR TAG NAVIGATION -->
+		<script type="text/javascript">
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 500);
+							return false;
+						}
+					}
+				});
+			});
+			
+			function proj(info) {
+				var val = info.style.display;
+				
+				document.getElementById('1').style.display = 'none';
+				document.getElementById('2').style.display = 'none';
+				document.getElementById('3').style.display = 'none';
+				
+				if(val == 'none')
+					info.style.display = 'block';
+			}
+		</script>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #676767;">
+		
+		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-ect-header -->
+		<div id="pageheader" class="container-fluid bg-hydrogen-header text-center"></div>
+		
+		<!-- NAVIGATION BAR -->
+		<nav class="navbar navbar-default bg-nav" data-spy="affix" data-offset-top="197" >
+			<div class="container" style="margin-top: -10px; margin-bottom: -10px">
+				<div class="navbar-header" style="margin-bottom: -10px">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand navbar-home" href="index.html" style="color: #949494;">
+						<img src="Resources/Images/OfficialMERLogos/MERLogoWhiteLogoOnlyWEB.png" class="navbar-logo" alt="MERLogo">Homepage
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar" >
+					<ul class="nav navbar-nav navbar-right navactive" style="margin-bottom: -10px">
+						<li><a href="#pageheader" style="color: #CDCDCD;">About Us</a></li>
+						<li><a href="#projects" style="color: #CDCDCD;">Projects</a></li>
+						<li><a href="#meettheteam" style="color: #CDCDCD;">Meet The Team</a></li>
+						<li><a href="#sponsors" style="color: #CDCDCD; display: none;">Sponsors</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+		<!-- BODY OF PAGE, CONTAINS... -->
+		<div class="container-fluid" style="padding-bottom: 0px;">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<!--<div class="contain-fluid text-center">
+						<h2>Mizzou Electric Car Team</h2>
+						<h4 style="color: red">THIS SITE IS A WORK IN PROGRESS. PLEASE FORGIVE ANY MALFUNCTIONS.</h4>
+						<br>
+					</div>-->
+					<a class="anchor" id="aboutus"></a>
+					<div class="well well-sm">
+						<h1 class="heading-indent">About Us</h1>
+						<div class="row">
+							<div class="col-md-1 vcenter"></div><div class="col-md-2 vcenter" style="">
+						    	<img src="Resources/Images/ECOMarathon1.jpg" class="img-rounded img-responsive" alt=""/>
+							</div><div class="col-md-9 vcenter">
+								<p class="p-well">Our organization seeks to develop and promote the practical application of alternative energy while providing a real-world design experience for engineering students at the University of Missouri. To this end, our organization designs, manufactures, and races an automobile powered by hydrogen gas against vehicles from other universities both in the U.S. and around the world.</p>
+							</div>
+						</div>
+
+						<h2 class="heading-indent-more">Mizzou Hydrogen Cars are designed and built by students from the University of Missouri</h2>
+						<p class="p-well">Taking skills learned in class, team members have the chance to apply their studies. Here are just some of the student lead projects that we have accomplished:</p>
+						<ul class="list-in-paragraph" style="padding-left: 110px">
+							<li>Mechanical engineers designed and fabricated the body, suspension, steering, and other elements</li>
+							<li>Chemical engineers have researched fuel cells and built the fuel system</li>
+							<li>Electrical engineers built our power distribution and telemetry systems</li>
+						</ul>
+						<p class="p-well">All of our engineers work across departments to bring TigerGen IV to life. This allows them to learn from each other and gain skills outside of their area of study.</p>
+						<p class="p-well">In addition, our team is active in promoting fuel cell technology around our extended community, at venues that encourage higher education, and green energy. In this way, our team can expand on the knowledge gained from six generations of solar car teams and three generations of hydrogen teams. We use it to build and promote technologies that have the ability to lead us to a sustainable future.
+						We are open to all majors, graduate and undergraduate students; team members devise business plans, fundraise, and manage their own publicity.</p>
+						
+						<h2 class="heading-indent-more">2018 Shell Eco-marathon Americas</h2>
+						<p class="p-well">This spring, Tigergen IV participated in the 2018 Shell Eco-marathon in Sonoma, California. For more race information, click <a href="https://www.shell.com/energy-and-innovation/shell-ecomarathon/americas.html">here.</a></p>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="Resources/Images/ECOMarathon2.jpg" class="img-rounded col-centered pic-grid-center" style="width: 60%;" alt="Columns_Pic">
+							</div>
+						</div>
+					</div>
+
+					<!--<br>
+					<br>
+					<br>
+					<br>
+					<img id="projects" src="Resources/Images/LogoDiv.png" class="logodiv" alt="LogoDiv">
+					<br>
+					<br>
+					<br>
+					<br>-->
+
+					<a class="anchor" id="projects"></a>
+					<div class="well well-sm">
+						<h1 class="heading-indent">Current Projects</h1>
+						<br>
+						<div class="row">
+							<div id="" class="col-sm-4" onClick="proj(document.getElementById('1'))">
+								<h4 class="heading-center">Hydrogen Cell</h4>
+								<img src="Resources/Images/Hydrogen_Cell_OPT.jpg" class="thumbnail imagetrans" style="width: 100%;" alt="FSAE_Chasis">
+							</div>
+							<div id="" class="col-sm-4" onClick="proj(document.getElementById('2'))">
+								<h4 class="heading-center">Chassis and Suspension</h4>
+								<img src="Resources/Images/Suspension_OPT.jpg" class="thumbnail imagetrans" style="width: 100%" alt="Electric_Truck">
+							</div>
+							<div id="" class="col-sm-4" onClick="proj(document.getElementById('3'))">
+								<h4 class="heading-center">Carbon Fiber Body</h4>
+								<img src="Resources/Images/CF_Body_OPT.jpg" class="thumbnail imagetrans" style="width: 100%" alt="Battery_Research">
+							</div>
+						</div>	
+						
+						<div id="1" style="display: none">
+							<h2 class="heading-indent">Hydrogen Cell</h2>
+							<p class="p-well">The Hydrogen Fuel Cell is a complicated piece of equipment. It turns a hydrogen fuel supply into electricity along with water as the reaction output. The fuel cell stack utilizes a PEM (Proton Exchange Membrane AKA Polymer Electrolyte Membrane), and the below diagram explains the stack’s functionality well.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/HC1.jpg" class="img-rounded img-responsive" width="100%" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+							<p class="p-well">This is the complex functionality of our vehicle’s power source broken down into a simplified diagram, however it is only a small piece of the vehicles energy supply. The energy supply actually consists of multiple components, both for energy supply purposes as well as safety precautions when dealing with the hydrogen. A diagram of our vehicle’s energy supply can be seen in the figure below.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/HC2.jpg" class="img-rounded img-responsive" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+							<p class="p-well">The hydrogen cylinder contains compressed 99.99% purity hydrogen gas, and it is securely attached within the energy compartment of the vehicle. Directly connected to the hydrogen cylinder is the pressure regulator. The pressure regulator allows us to control the amount of hydrogen being released from the cylinder. With our fuel cell stack, we run the hydrogen supply at 0.5 bar gauge pressure. The pressure regulator feeds into an emergency shutdown valve, which we have implemented as a solenoid valve. The solenoid valve will normally be closed, shutting off any flow to gas through the system, until the solenoid is energized which will flip the valve open and allow the flow of hydrogen. This is a safety precaution for the system. Once the gas has passed the solenoid valve, it flows through a flow meter. The flow meter is useful in determining exactly how much hydrogen gas is being fed to the fuel cell. From the flow meter, the hydrogen flows directly into the fuel cell, and that is where the power is created. As an additional component for the energy supply system, the fuel cell has an integrated super capacitor, which will store power from the fuel cell that can be used to drive the motor forward. The fuel cell’s generated power is fed through the motor controller, and then directly to the motor. This is what drives the vehicle forward. All of these components hooked up just as it would be inside the vehicle are shown in the figure below.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/HC3.jpg" class="img-rounded img-responsive" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+						</div>
+						
+						<div id="2" style="display: none">
+							<h2 class="heading-indent">Chassis</h2>
+							<p class="p-well">The chassis is one of the most important projects for the vehicle. It is the backbone to the structural integrity of the vehicle, and is the main frame that key components such as the suspension systems and roll bar for driver safety. It is also a very good way to base all of the vehicle’s dimensions off a structurally sound metal frame. The chassis is made of all steel tubing, and welded together by mechanical engineering students. The chassis undergoes FEA as well to ensure no failure in the structural integrity of the vehicle.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/CH3.jpg" class="img-rounded img-responsive" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+							<h2 class="heading-indent">Suspension</h2>
+							<p class="p-well">Our front and rear suspensions are designed and built all by our mechanical engineering students. We design everything in 3D CAD programming, and conduct FEA (Finite Element Analysis) before manufacturing and assembly. Other than the spring dampeners, all of our suspension components are made by hand from aluminum stock and steel tubing. Everything is machined on a mill or lathe, and then welded together where needed. The Finite Element Analysis distinguishes the points of interest in the suspension designs, and ensures that the final assembly will not exceed its material’s yield strength and fail. In preparation of integrating the suspension systems into the chassis, the suspensions are assembled individually from the vehicle. This gives us precise hands on dimensions of the suspensions, and makes it easy to attach to the chassis and vehicle.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/CH2.jpg" class="img-rounded img-responsive" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+						</div>
+						
+						<div id="3" style="display: none">
+							<h2 class="heading-indent">Carbon Fiber Body</h2>
+							<p class="p-well">The team constructs its vehicle’s body from start to finish. We begin with the design of the vehicle body drawing it up in Solidworks. We design the car to be the dimensions needed for competition, and include the curves and contours necessary for optimal aerodynamics.</p>
+							<div class="row">
+								<div class="col-sm-2 vcenter"></div><div class="col-sm-4 vcenter">
+									<img src="Resources/Images/BD1.jpg" width="100%" class="img-rounded" alt=""/>
+								</div><div class="col-sm-4 vcenter">
+									<img src="Resources/Images/BD2.png" width="100%" class="img-rounded" alt=""/>
+								</div><div class="col-sm-2 vcenter"></div>
+							</div>		
+									
+							<p class="p-well">With TigerGen lV, we made the mold from our CAD design out of clay and sculpted it by hand. This was great hands on design work for everyone on the team. Once the mold was created, we were able to begin forming the body with composite material. In the construction of the body, we utilize carbon fiber and nomex for its high strength and lightweight characteristics. The nomex is sandwiched between epoxied carbon fiber sheets, and laid down in the mold made from the clay.</p>
+							
+							<div class="row">
+								<div class="col-sm-1 vcenter"></div><div class="col-sm-3 vcenter">
+									<img src="Resources/Images/BD3.jpg" width="100%" class="img-rounded" alt=""/>
+								</div><div class="col-sm-8 vcenter">
+									<p>In order to conform the carbon fiber to the shape of the mold, we vacuum bag the carbon fiber. This means that we vacuum out all the air inside the sealed off bag, so that the carbon fiber conforms nicely to the vehicle body mold. As the epoxied carbon fiber cures, it will harden in the shape of the constructed mold. Once fully cured, we pop it out and have our body. For additional body work, we are able to utilize carbon fiber and fiberglass as patchwork for the vehicle body.</p> 
+								</div>
+							</div>
+							<br>
+							<p class="p-well">Our start to finish process for constructing the body is one of the most valuable skills to have as apart of this team. We all gain hands on experience with composite materials, which becomes a rare and valuable skill to have as an engineer.</p>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-6">
+									<img src="Resources/Images/BD4.jpg" class="img-rounded img-responsive" alt=""/>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>							
+						</div>						
+					</div>
+
+					<a class="anchor" id="meettheteam"></a>
+					<div class="well well-sm">
+						<h1 class="heading-indent">Meet The Team</h1>
+						<br>
+						<div class="row text-center" style="">
+							<div class="col-md-2"></div>
+							<a target="_blank" href="https://www.linkedin.com/in/kolton-speer/">
+								<div class="col-md-2">
+									<img src="Resources/Images/Headshots/Kolton.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+									<h3>Kolton Speer</h3>
+									<p>Hydrogen Car Technical Lead</p>
+								</div>
+							</a>
+							<a target="" href="#meettheteam">
+								<div class="col-md-2">
+									<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+									<h3>Rushil Thakker</h3>
+									<p>Electrical Lead</p>
+								</div>
+							</a>
+							
+							<a target="" href="#meettheteam">
+								<div class="col-md-2">
+									<img src="Resources/Images/Headshots/Corey.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+									<h3>Corey Jackson</h3>
+									<p>Mechanical Lead</p>
+								</div>
+							</a>
+							<a target="" href="#meettheteam">
+								<div class="col-md-2">
+									<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+									<h3>Brohde Bennett</h3>
+									<p>Fabrication Officer</p>
+								</div>
+							</a>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+
+					<!--<div>
+						<button class="btn btn-basic btn-lg">+ More About The Team</button>
+					</div>-->			
+
+					<a class="anchor" id="sponsors"></a>
+					<div class="well well-sm" style="display: none">
+						<h1 class="heading-indent">Sponsors</h1>
+						<div class="row">
+							<div class="col-sm-12" style="height: 80px;">
+								<img src="Resources/Images/Logos/MU ENG FIN.png" class="col-centered pic-grid-center" alt="MUEngineering">
+							</div>
+						</div>				
+
+						<div class="row"><div class="col-sm-3 vcenter">
+								<img src="Resources/Images/Logos/IEEE FIN.png" class="col-centered" style="width: 100%" alt="IEEE">
+							</div><div class="col-sm-3 vcenter">
+								<img src="Resources/Images/Logos/MPC FIN.png" class="col-centered" style="width: 100%" alt="MPC">
+							</div><div class="col-sm-3 vcenter">
+								<img src="Resources/Images/Logos/MUTRUX FIN.png" class="col-centered" style="width: 100%" alt="Mutrux">
+							</div><div class="col-sm-3 vcenter">
+								<img src="Resources/Images/Logos/SW FIN.png" class="col-centered" style="width: 100%" alt="SolidWorks">
+							</div>					
+						</div>
+
+						<div class="row">
+							<div class="col-sm-4 vcenter">
+								<img src="Resources/Images/Logos/SPEAR FIN.png" class="col-centered" style="width: 100%" alt="Spear">
+							</div><div class="col-sm-4 vcenter">
+								<img src="Resources/Images/Logos/TTS FIN.png" class="col-centered" style="width: 100%" alt="TTS">
+							</div><div class="col-sm-4 vcenter">
+								<img src="Resources/Images/Logos/ECP FIN 2.png" class="col-centered" style="width: 100%" alt="ECP">
+							</div>
+						</div>
+
+						<br>
+						<p>Building a Formula SAE electric racecar is an expensive task. Thanks to the sponsors above, we were able to successfully convert a Chevy S10 to an all electric vehicle. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. <!--Quick donations can be sent using the PayPal link below.--> Any sponsorship inquiries can be sent to <a href="https://mizzouecoracing@gmail.com">mizzouecoracing@gmail.com.</a></p>
+						<br>
+						<h4 class="heading-center">Thank you so much for your contribution!</h4>
+						<!--<a target="_blank" href="http://paypal.me/JeffreyS179"><img src="Resources/Images/paypal.PNG" style="height: 50px;" alt="PayPal"></a>-->
+					</div>
+
+					<br>
+					<br>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="row" style="width: 100%; margin: 0px; margin-bottom: 10px;">
+					<div class="col-sm-5 col-xs-2"></div>
+					<div class="col-sm-1 col-xs-4">
+						<a target="_blank" href="https://twitter.com/mizzouecoracing"><img class="img-responsive" src="Resources/Images/twitter.png" alt=""/>
+						</a>
+					</div>
+					<div class="col-sm-1 col-xs-4">
+						<a target="_blank" href="https://www.facebook.com/mizzouecoracing/"><img class="img-responsive" src="Resources/Images/fb.png" alt=""/>
+						</a>
+					</div>
+					<div class="col-sm-5 col-xs-2"></div>
+				</div>
+			</div>
+		
+
+			<!-- FOOTER OF PAGE -->
+			<footer class="footer" style="">
+				<div class="row" style="background: linear-gradient(to bottom,#E3E3E3,#9C9C9C);">
+					<div class="col-sm-3 vcenter"></div><div class="col-sm-3 vcenter">
+						<img class="col-centered pic-grid-center" src="Resources/Images/OfficialMERLogos/MERLogoBlackWEB.png" style="width: 60%; padding: 5px;" alt="MERLogo">
+					</div><div class="col-sm-3 vcenter">
+						<img class="col-centered pic-grid-center" src="Resources/Images/OfficialMERLogos/HydrogenLogoBlackWEB.png" style="width: 90%; padding: 5px;" alt="HydrogenLogo">
+					</div><div class="col-sm-3 vcenter"></div>				
+				
+					<div class="footer-bg text-center" style="width: 100%;">
+						<p class="footer-text" style="margin-top: 0px; margin-bottom: 3px">University of Missouri Columbia</p>
+						<p class="footer-text" style="margin-bottom: 0px;">Updated August 2018</p>
+					</div> 
+				</div>
+			</footer>
+		</div>
+</body>
+</html>

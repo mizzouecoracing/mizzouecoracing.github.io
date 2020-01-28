@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/* Stylesheet for MizzouEcoRacing  */
+@import url("https://use.typekit.net/vfy8olh.css");
+
+
+/* Fonts */
+@font-face {
+	font-family: AgencyFB;
+    src: url(Resources/Fonts/AGENCYR.TTF);
+}
+
+@font-face {
+	font-family: AgencyFBBold;
+	src: url(Resources/Fonts/AGENCYB.TTF);
+}
+
+
+/* Bootstrap medium column max width before collapse
+   Necessary here to correct column behavior on mobile */
+@media screen and (max-width: 991px) {
+	.mobile-pic {
+		width: 70%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+
+/* Bootstrap small column max width before collapse 
+   Necessary here to correct column behavior on mobile */
+@media screen and (max-width: 767px) {
+	.thumb-push {
+		margin-bottom: 45%;
+	}
+}
+
+
+/* Carousel Screen width rules */
+@media screen and (max-width: 700px) {
+	.carousel-inner {
+		height: 300px;
+	}	
+}
+
+@media screen and (min-width: 701px) {
+	.carousel-inner {
+		height: 600px;
+	}
+}
+
+
+/* Hide and show locator depending on screen size */
+@media screen and (max-width: 435px) {
+	#location {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 436px) {
+	#location {
+		display: block;
+	}
+}
+
+
+/* Changes necessary for sticky navbar to work */
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid {
+ position: relative;
+ top: 50px;
+}
+
+
+/* Customizes how text hyperlinks are displayed for this site */
+a {
+	color: #808080;
+}
+
+a:visited {
+	color: #808080;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	transition: .2s;
+	text-decoration: none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+
+/* Set line break height */
+br {
+	line-height: 30px;
+}
+
+
+/* Set body background as image */
+body {	
+	background: url(Resources/Images/Back6.png) center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #ffffff;
+	background-color: #676767;
+}
+
+
+/* Define heading attributes */
+h1,h2,h3 {
+	font-family: AgencyFBBold;
+	font-variant: small-caps;
+	/*text-shadow: 2px 2px 3px #000000;*/
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-family: AgencyFBBold;
+	letter-spacing: 1.5px;
+	font-size: 22px;
+}
+
+
+/* Define paragraph attributes */
+p {
+	font-family: "ff-tisa-sans-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .8px;	
+	font-size: 18px;
+}
+
+
+/* Custom styled button */
+.btn-basic {
+	font-size: 20px;
+	letter-spacing: 2px;
+	background-color: #000000;
+	border-color: #3d3d3d;
+	border-width: 3px;
+}
+
+
+/* Center class for sponsor images */
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+
+/* Placing an image vertically center */
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+
+/* Padding for logo images */
+.logos-padding {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
+/* Define Index Landing Pics (Electric & Hydrogen) behavior */
+.landing-pic {
+	position: relative;
+	display: block;
+	float: left;
+	border: 3px solid #1F1F1F;
+	border-radius: 3px;
+}
+
+.landing-pic-over {
+	position: absolute;
+	left: 3%;
+	display: block;
+	filter: brightness(70%);
+}
+
+.landing-pic-over:hover {
+	filter: brightness(100%);
+	transition: .2s;
+}
+
+
+/* Define project thumbnail behavior */
+.imagetrans {
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.imagetrans:hover {
+	transition: .2s;
+	opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+/* Navbar Attributes */
+.navbar-logo {
+	display: inline !important;
+	height: 30px; 
+	margin-right: 15px; 
+	margin-top: -5px;
+}
+
+.nav {
+	font-family: AgencyFBBold;
+	color: #C9C9C9
+}
+
+.navbar-brand {
+	font-family: AgencyFBBold;
+}
+
+.bg-nav{
+	background-image: linear-gradient(to bottom,#323232,#1D1D1D);
+}
+
+.navbar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+
+.navbar-home {
+	font-size: 22px;
+	letter-spacing: 3px;
+}
+.navbar-home:hover {
+	transition: .2s;
+	/*font-size: 20px;*/
+	color: black !important;
+}
+
+.navbar-nav li a:hover {
+	color: #000000 !important;
+	transition: .2s;
+	/*font-size: 14px;*/
+}
+
+.navactive > li.active > a {
+	background-image: linear-gradient(to top right, #363636, #5F5F5F 99%) !important;
+	
+}
+
+.btn-gradient {
+	background-image: linear-gradient(to right,#CDCDCD,#CDCDCD);
+}
+
+
+/* Profile picture attributes */
+.profilepic {
+	width: 70%;
+}
+
+
+/* Page header picture attributes */
+.bg-header {
+	background: url(Resources/Images/HeadBack2.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #000000;
+	color: #000000;
+	border-bottom: 5px solid #1E1E1E;
+}
+
+.bg-index {
+	background-image: linear-gradient(to bottom,#373737,#252525);
+	border-bottom: 3px solid #121212;
+	hedight: 100px;
+}
+
+.bg-ect-header {
+	background: url(Resources/Images/ECTHeader2.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #ffffff;
+	color: #000000;
+	height: 170px;
+}
+
+.bg-hydrogen-header {
+	background: url(Resources/Images/HydrogenHeader.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #ffffff;
+	color: #000000;
+	height: 170px;
+}
+
+
+/* Footer Attributes */
+.footer {
+	color: #6F6F6F;
+}
+
+.footer-text {
+	font-size: 12px;
+}
+
+.footer-bg {
+	height: 50px;
+	background-image: linear-gradient(to bottom, #1B1B1B, #121212);
+	padding-top: 7px;
+	padding-bottom: 50px;
+}
+
+.pic-grid-center {
+	display: flex;
+	height: 100%;
+}
+
+
+/* Optional Page Divider w/ Logo */
+.logodiv {
+	width: 100%; 
+	margin: auto;
+}
+
+
+/* Well attributes for page sections */
+.well {
+	background-image: linear-gradient(to bottom right,#222222,#131313);
+	/*background-color: #131313;*/
+	border-color: #090909;
+	border-radius: 15px;
+	padding-bottom: 20px;
+}
+
+
+/* For centering headings */
+.heading-center {
+	text-align: center;
+}
+
+
+/* Define extra container attributes */
+.container-fluid {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* Picture carousel Attributes*/
+.carousel-margin {
+	margin-bottom: 40px;
+}
+
+.item {
+	height: 100%;
+}
+
+.carousel-pics {
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+/* Index Header link for Electric/Hydrogen */
+.heading-link {
+	color: white !important;
+}
+
+.heading-link:hover {
+	color: #B5B5B5 !important;
+}
+.heading-indent {
+	padding-left: 10px;
+}
+
+.heading-indent-more {
+	padding-left: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* Change bgd attributes of Bootstrap's drop down */
+.dropdown-menu {
+	background-color: #2E2E2E;
+}
+
+.dropdown-text {
+	color: #E9E9E9 !important;
+}
+
+.dropdown-toggle:focus {
+	background-color: #4D4D4D !important;
+}
+
+.dropdown-toggle {
+	font-family: AgencyFBBold;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dropdown {
+	margin-bottom: 0px;
+	margin-top: 10%;
+}
+
+
+/* Paragraph attributes when within a well */
+.p-well {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* When using a list in a paragraph in a well */
+.list-in-paragraph {
+	font-family: "ff-tisa-sans-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .8px;
+	
+	font-size: 18px;
+	margin-left: 2%;
+	margin-right: 5%;
+}
+

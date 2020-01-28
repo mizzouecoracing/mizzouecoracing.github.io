@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MER: Electric Car Team</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- IMPORTS BOOTSTRAP STYLE SHEETS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- SMOOTH SCROLL -->		
+		<link rel="stylesheet" type="text/css" href="ecostyleback.css"> <!-- IMPORTS EXTERNAL STYLE SHEET -->
+		
+		<!--JAVA SCRIPT FOR SMOOTH SCROLLING WITH ANCHOR TAG NAVIGATION -->
+		<script type="text/javascript">
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 500);
+							return false;
+						}
+					}
+				});
+			});
+			
+			function proj(info) {
+				var val = info.style.display;
+				
+				document.getElementById('FSAE_INFO').style.display = 'none';
+				document.getElementById('TRUCK_INFO').style.display = 'none';
+				document.getElementById('BATTERY_INFO').style.display = 'none';
+				
+				if(val == 'none')
+					info.style.display = 'block';
+			}
+		</script>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #676767">
+		
+		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-ect-header -->
+		<div id="pageheader" class="container-fluid bg-ect-header text-center"></div>
+		
+		<!-- NAVIGATION BAR -->
+		<nav class="navbar navbar-default bg-nav" data-spy="affix" data-offset-top="197" >
+		  <div class="container" style="margin-top: -10px; margin-bottom: -10px">
+				<div class="navbar-header" style="margin-bottom: -10px">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand navbar-home" href="index.html" style="color: #949494;">
+						<img src="Resources/Images/OfficialMERLogos/MERLogoWhiteLogoOnlyWEB.png" class="navbar-logo" alt="MERLogo">Homepage
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar" >
+					<ul class="nav navbar-nav navbar-right navactive" style="margin-bottom: -10px">
+						<li><a href="#pageheader" style="color: #CDCDCD;">About Us</a></li>
+						<li><a href="#projects" style="color: #CDCDCD;">Projects</a></li>
+						<li><a href="#meettheteam" style="color: #CDCDCD;">Meet The Team</a></li>
+						<li><a href="#sponsors" style="color: #CDCDCD;">Sponsors</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+		<!-- BODY OF PAGE, CONTAINS... -->
+		<div class="container-fluid text-center">
+		<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-lg-10">
+			<div class="contain-fluid text-center">
+				
+				<h2>Mizzou Electric Car Team</h2>
+				
+				<h4 style="color: red">THIS SITE IS A WORK IN PROGRESS. PLEASE FORGIVE ANY MALFUNCTIONS.</h4>
+				<br>
+			</div>
+		
+			<div id="aboutus" class="contain-fluid text-center">
+				<h1>About Us</h1>
+				<br>
+				<p>The Electric Car Team has grown into a strong build team over the past couple of years. In the beginning, the team struggled with leadership and couldn’t seem to get out of the beginning stages of new organization. With new leadership in place, the team gained enough membership and funds to start converting a Chevy S10 to an electric vehicle... </p>
+				<br>
+				<img id="JaredTruck" src="Resources/Images/JaredTruckOPT2.jpg" class="img-rounded" style="width: 90%; margin: auto" alt="Columns_Pic">
+				<br>
+				<br>
+				<br>
+				<p>In a back lot of the College of Engineering, the team was able to complete the electric S10 in May of 2017. The team surpassed many obstacles to complete this build, the biggest was obtaining funding. The S10 is now a promotional piece for the team and the College of Engineering, making appearances at recruiting events and parades...</p>
+				<br>
+				<img id="Columns" src="Resources/Images/ECT_Columns_2OPT.jpg" class="img-rounded" style="width: 90%; margin: auto" alt="Columns_Pic">
+				<br>
+				<br>
+				<br>
+				<p>The Electric Car Team is now pursuing the Formula SAE Electric competition. In this competition, schools from across the world compete in many varying events, including Design, Financial Plan, Acceleration, Autocross, and 
+					<a target="_blank" href="https://www.facebook.com/MizzouECT/photos/a.273645119322105.70245.106914385995180/1716474095039193/?type=3&theater">more.</a> 
+				Typically, this team will design and build a car every year, but as this is the team's first experience in the FSAE Electric Competition, we plan to take two years for this build and go to competition in June of 2019. Pictured below is Missouri S&T’s Formula SAE Electric racecar.</p>
+				<br>
+				<img id="S&TCar" src="Resources/Images/S&TCar.jpg" class="img-rounded" style="width: 90%; margin: auto" alt="Columns_Pic">
+				<br>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<img id="projects" src="Resources/Images/LogoDiv.png" class="logodiv" alt="LogoDiv">
+			<br>
+			<br>
+			<br>
+			<br>
+						
+			<div id="" class="contain-fluid text-center">
+				<h1>Current Projects</h1>
+				<br>
+				<div id="FSAE_DIV" class="col-sm-4" onClick="proj(document.getElementById('FSAE_INFO'))">
+					<h4>FSAE Electric Chasis</h4>
+					<img src="Resources/Images/FSAE_Chasis_OPT.png" class="img-responsive margin thumbnail imagetrans" style="width: 100%;" alt="FSAE_Chasis">
+				</div>
+				<div id="TRUCK_DIV" class="col-sm-4" onClick="proj(document.getElementById('TRUCK_INFO'))">
+					<h4>Finishing Up Electric Truck</h4>
+					<img src="Resources/Images/Electric_Truck_OPT.png" class="img-responsive margin thumbnail imagetrans" style="width: 100%" alt="Electric_Truck">
+				</div>
+				<div id="BATTERY_DIV" class="col-sm-4" onClick="proj(document.getElementById('BATTERY_INFO'))">
+					<h4>Battery Research</h4>
+					<img src="Resources/Images/Battery_Research_OPT.png" class="img-responsive margin thumbnail imagetrans" style="width: 100%" alt="Battery_Research">
+				</div>
+			</div>
+			
+			<div id="FSAE_INFO" style="display: none">
+				<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+				<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+				<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TEST</h1>
+				<p>TEST</p>
+			</div>
+			
+			<div id="TRUCK_INFO" style="display: none">
+				<p>TRUCKTRUCKTRUCK</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+				<p>TRUCKTRUCKTRUCK</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+				<p>TRUCKTRUCKTRUCK</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>TRUCKTRUCKTRUCK</h1>
+				<p>TEST</p>
+			</div>
+			
+			<div id="BATTERY_INFO" style="display: none">
+				<p>BATTERYBATTERY</p>
+				<h1>TEST</h1>
+				<p>BATTERYBATTERY</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+				<p>BATTERYBATTERY</p>
+				<h1>TEST</h1>
+				<p>BATTERYBATTERY</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+				<p>BATTERYBATTERY</p>
+				<h1>TEST</h1>
+				<p>BATTERYBATTERY</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+					<p>TEST</p>
+				<h1>BATTERYBATTERY</h1>
+				<p>TEST</p>
+			</div>
+			
+			<img id="meettheteam" src="Resources/Images/LogoDiv.png" class="logodiv" style="margin-top: 150px;" alt="LogoDiv">
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<div class="contain-fluid text-center">
+				<h1>Meet The Team</h1>
+				<br>
+				<div class="row contain-fluid text-center" style="margin: auto; display: table;">
+					<div class="col-sm-1"></div>
+					<a href="https://www.linkedin.com/in/isaac-lagermann-62279a149/">
+						<div class="col-md-2">
+							<img src="Resources/Images/default_profile_pic.jpg" class="profilepic" alt="ECTHeadshot">
+							<h3>Issac Lagermann</h3>
+							<p>President</p>
+						</div>
+					</a>
+					<a href="https://www.linkedin.com/in/dima-spellman-69003081/">
+						<div class="col-md-2">
+							<img src="Resources/Images/default_profile_pic.jpg" class="profilepic" alt="ECTHeadshot">
+							<h3>Dima Spellman</h3>
+							<p>Head Mechanical Engineer</p>
+						</div>
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/in/jeffrey-schulz-35a905134/">
+						<div class="col-md-2">
+							<img src="Resources/Images/default_profile_pic.jpg" class="profilepic" alt="ECTHeadshot">
+							<h3>Jeff Schulz</h3>
+							<p>Head Electrical Engineer</p>
+						</div>
+					</a>
+						<div class="col-md-2">
+							<img src="Resources/Images/default_profile_pic.jpg" class="profilepic" alt="ECTHeadshot">
+							<h3>Logan Eidson</h3>
+							<p>Fabrications Officer</p>
+						</div>
+					<a href="">
+						<div class="col-md-2">
+							<img src="Resources/Images/default_profile_pic.jpg" class="profilepic" alt="ECTHeadshot">
+							<h3>Isaac Lagermann</h3>
+							<p>Operations Officer</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<br>
+			
+			<!--<div>
+				<button class="btn btn-basic btn-lg">+ More About The Team</button>
+			</div>-->
+			
+			<br>
+			<br>
+			<br>
+			<img id="sponsors" src="Resources/Images/LogoDiv.png" class="logodiv" alt="LogoDiv">
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<div class="container-fluid text-center">
+				<h1>Sponsors</h1>
+				<br>
+				<img src="Resources/Images/Logos/MU ENG FIN.png" class="spon-pad" style="height: 80px;" alt="MUEngineering">
+				<br>
+				<br>
+				<div> 
+					<img src="Resources/Images/Logos/IEEE FIN.png" class="spon-pad" style="height: 80px;" alt="IEEE">
+					<img src="Resources/Images/Logos/MPC FIN.png" class="spon-pad" style="height: 120px;" alt="MPC">
+					<img src="Resources/Images/Logos/MUTRUX FIN.png" class="spon-pad" style="height: 80px;" alt="Mutrux">
+					<img src="Resources/Images/Logos/SW FIN.png" class="spon-pad" style="height: 80px;" alt="SolidWorks">
+				</div>
+				<br>
+				<div>
+					<img src="Resources/Images/Logos/SPEAR FIN.png" class="spon-pad" style="height: 80px;" alt="Spear">
+					<img src="Resources/Images/Logos/TTS FIN.png" class="spon-pad" style="height: 60px;" alt="TTS">
+					<img src="Resources/Images/Logos/ECP FIN 2.png" class="spon-pad" style="height: 60px;" alt="ECP">
+				</div>
+				<br>
+				<br>
+				<p>Building a Formula SAE electric racecar is an expensive task. Thanks to the sponsors above, we were able to successfully convert a Chevy S10 to an all electric vehicle. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. <!--Quick donations can be sent using the PayPal link below.--> Any sponsorship inquiries can be sent to mizzouecoracing@gmail.com.</p>
+				<br>
+				<h4>Thank you so much for your contribution!</h4>
+				<br>
+				<br>
+				<!--<a target="_blank" href="http://paypal.me/JeffreyS179"><img src="Resources/Images/paypal.PNG" style="height: 50px;" alt="PayPal"></a>-->
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+			
+		<div class="col-sm-1"></div>
+		</div>
+		</div>
+
+		<!-- FOOTER OF PAGE -->
+		<footer class="footer text-center">
+			<div class="" style="width: 100%; background: linear-gradient(to bottom,#E3E3E3,#9C9C9C);">
+				<img src="Resources/Images/OfficialMERLogos/MERLogoBlackWEB.png" style="height: 150px; margin: auto; margin-right: 50px; margin-left: 50px; margin-top: 5px; margin-bottom: 5px;" alt="MERLogo">
+				<img src="Resources/Images/OfficialMERLogos/ECTLogoBlackWEB.png" style="height: 90px; margin: auto; margin-right: 50px; margin-left: 50px" alt="ECTLogo">
+			</div>
+			<div class="footer-bg">
+				<p class="footer-text" style="margin-top: 0px; margin-bottom: 3px">University of Missouri Columbia</p>
+				<p class="footer-text" style="margin-bottom: 5px;">Updated May 2018</p>
+			</div> 
+		</footer>
+
+	</body>
+</html>
