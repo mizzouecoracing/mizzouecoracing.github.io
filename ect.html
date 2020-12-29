@@ -38,18 +38,10 @@
 				if(val == 'none')
 					info.style.display = 'block';
 			}
-			
-			
-			function CenterPayPal() {
-				var num = (document.getElementById('paypal-well').clientWidth / 2) - (147 / 2);
-				var pad = num.toString() + "px";
-				document.getElementById('paypalform').style.paddingLeft = pad;
-				document.getElementById('paypalform').style.paddingRight = pad;
-			}
 		</script>		
 	</head>
 	
-	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #676767;" onload="CenterPayPal()" onResize="CenterPayPal()">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #676767;">
 		
 		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-ect-header -->
 		<div id="pageheader" class="container-fluid bg-ect-header text-center"></div>
@@ -71,7 +63,6 @@
 					<ul class="nav navbar-nav navbar-right navactive" style="margin-bottom: -10px">
 						<li><a href="#pageheader" style="color: #CDCDCD;">About Us</a></li>
 						<li><a href="#projects" style="color: #CDCDCD;">Projects</a></li>
-						<li><a href="#meettheteam" style="color: #CDCDCD;">Meet The Team</a></li>
 						<li><a href="#sponsors" style="color: #CDCDCD;">Sponsors</a></li>
 					</ul>
 				</div>
@@ -212,44 +203,6 @@
 						</div>
 					</div>
 
-					<a class="anchor" id="meettheteam"></a>
-					<div class="well well-sm">
-						<h1 class="heading-indent">Meet The Team</h1>
-						<br>
-						<div class="row text-center" style="">
-							<div class="col-md-2"></div>
-							<a target="_blank" href="https://www.linkedin.com/in/jason-pae/">
-								<div class="col-md-2">
-									<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-									<h3>Jason Pae</h3>
-									<p>Electric Car Technical Lead</p>
-								</div>
-							</a>
-							<a target="" href="#meettheteam">
-								<div class="col-md-2">
-									<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-									<h3>Rushil Thakker</h3>
-									<p>Electrical Lead</p>
-								</div>
-							</a>
-							
-							<a target="" href="#meettheteam">
-								<div class="col-md-2">
-									<img src="Resources/Images/Headshots/Corey.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-									<h3>Corey Jackson</h3>
-									<p>Mechanical Lead</p>
-								</div>
-							</a>
-							<a target="" href="#meettheteam">
-								<div class="col-md-2">
-									<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-									<h3>Brohde Bennett</h3>
-									<p>Fabrication Officer</p>
-								</div>
-							</a>
-							<div class="col-md-2"></div>
-						</div>
-					</div>
 
 					<!--<div>
 						<button class="btn btn-basic btn-lg">+ More About The Team</button>
@@ -291,18 +244,9 @@
 						</div>
 
 						<br>
-						<p class="p-well">Building a Formula SAE electric racecar is an expensive task. Thanks to the sponsors above, we were able to successfully convert a Chevy S10 to an all electric vehicle. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. <!--Quick donations can be sent using the PayPal link below.--> Any sponsorship inquiries can be sent to <a href="mailto:muengrecoracing@missouri.edu">muengrecoracing@missouri.edu.</a></p>
+						<p class="p-well">Building a Formula SAE electric racecar is an expensive task. Thanks to the sponsors above, we were able to successfully convert a Chevy S10 to an all electric vehicle. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. Any sponsorship inquiries can be sent to <a href="mailto:muengrecoracing@missouri.edu">muengrecoracing@missouri.edu.</a></p>
 						<br>
 						<h4 class="heading-center">Thank you so much for your contribution!</h4>
-						
-						<div style="margin-top: 3%;">
-							<form id="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="UNZJ74CN9CMXQ">
-								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-							</form>
-						</div>
 					</div>
 
 					<br>

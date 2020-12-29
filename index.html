@@ -13,18 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="ecostyle.css"> <!-- IMPORTS EXTERNAL STYLE SHEET -->
 	</head>
 	
-	<script>
-		//Uses javascript to center PayPal div
-		function CenterPayPal() {
-			var num = (document.getElementById('paypal-well').clientWidth / 2) - (147 / 2);
-			var pad = num.toString() + "px";
-			document.getElementById('paypalform').style.paddingLeft = pad;
-			document.getElementById('paypalform').style.paddingRight = pad;
-		}
-	</script>
 	
-	
-	<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="CenterPayPal()" onResize="CenterPayPal()">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		
 		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-header -->
 		<nav class="navbar navbar-default bg-index">
@@ -41,7 +31,6 @@
 						<ul class="dropdown-menu">
 						  	<li><a class="dropdown-text" href="ect.html#pageheader">Home</a></li>
 						  	<li><a class="dropdown-text" href="ect.html#projects">Projects</a></li>
-							<li><a class="dropdown-text" href="ect.html#meettheteam">Meet The Team</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -50,7 +39,6 @@
 						<ul class="dropdown-menu">
 						  	<li><a class="dropdown-text" href="hydrogen.html#pageheader">Home</a></li>
 						  	<li><a class="dropdown-text" href="hydrogen.html#projects">Projects</a></li>
-							<li><a class="dropdown-text" href="hydrogen.html#meettheteam">Meet The Team</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -182,46 +170,62 @@
 			
 			<!-- MEET THE TEAM -->
 			<div class="well well-sm">
-				<h1 class="heading-indent">Meet The Executive Board</h1>
+				<h1 class="heading-indent">Meet The Officers</h1>
 				<br>
 				<div class="row text-center" style="">
-					<div class="col-md-1"></div>					
+					<div class="col-md-3"></div>					
 					<a target="_blank" href="https://www.linkedin.com/in/samantha-sample/">
 						<div class="col-md-2">
 							<img src="Resources/Images/Headshots/Sam.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
 							<h3>Samantha Sample</h3>
-							<p>President</p>
+							<p>Outreach Chair</p>
 						</div>
 					</a>
-					<a target="_blank" href="https://www.linkedin.com/in/romankovalevski954ba41/">
+					<a target="_blank" href="https://www.linkedin.com/in/ryan-wilcox-4185b4192/">
 						<div class="col-md-2">
 							<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-							<h3>Roman Kovalevski</h3>
-							<p>Vice President</p>
+							<h3>Ryan Wilcox</h3>
+							<p>Logistics Chair</p>
 						</div>
 					</a>
-					<a target="_blank" href="https://www.linkedin.com/in/isaac-lagermann-62279a149/">
+					<a target="_blank" href="https://www.linkedin.com/in/brendan-young-6b02b4192/">
 						<div class="col-md-2">
-							<img src="Resources/Images/Headshots/Isaac.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-							<h3>Isaac Lagermann</h3>
-							<p>Treasurer</p>
+							<img src="Resources/Images/Headshots/Brendan.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+							<h3>Brendan Young</h3>
+							<p>Finance Chair</p>
 						</div>
 					</a>
-					<a target="_blank" href="https://www.linkedin.com/in/jason-pae/">
+					<div class="col-md-3"></div>
+				</div>
+                <div class="row text-center" style="">
+					<div class="col-md-2"></div>
+                    <a target="_blank" href="https://www.linkedin.com/in/corey-jackson-6712aa138/">
 						<div class="col-md-2">
-							<img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-							<h3>Jason Pae</h3>
-							<p>Electric Car Technical Lead</p>
+							<img src="Resources/Images/Headshots/Corey.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+							<h3>Corey Jackson</h3>
+							<p>Mechanical Captain</p>
 						</div>
 					</a>
-					<a target="_blank" href="https://www.linkedin.com/in/kolton-speer/">
+                    <a target="_blank" href="https://www.linkedin.com/in/rushilthakker/">
 						<div class="col-md-2">
-							<img src="Resources/Images/Headshots/Kolton.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
-							<h3>Kolton Speer</h3>
-							<p>Hydrogen Car Technical Lead</p>
+							<img src="Resources/Images/Headshots/Rushil.jpeg" class="profilepic mobile-pic" alt="ECTHeadshot">
+							<h3>Rushil Thakker</h3>
+							<p>Electrical Captain</p>
+						</div>
+					</a>					
+					<a target="_blank" href="https://www.linkedin.com/in/miles-buttress-05059a196/">
+						<div class="col-md-2">
+							<img src="Resources/Images/Headshots/Miles.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+							<h3>Miles Buttress</h3>
+							<p>HV Lead</p>
 						</div>
 					</a>
-					<div class="col-md-1"></div>
+                    <div class="col-md-2" style="color: #808080">
+                        <img src="Resources/Images/Headshots/Male.jpg" class="profilepic mobile-pic" alt="ECTHeadshot">
+                        <h3>Aaron Fuller</h3>
+                        <p>LV & Controls Lead</p>
+                    </div>
+					<div class="col-md-2"></div>
 				</div>
 			</div>
 			
@@ -261,16 +265,6 @@
 				</div>
 				<p class="p-well">Building a Formula SAE electric racecar and a hydrogen vehicle are expensive tasks. Thanks to the sponsors above, we were able to successfully build our team to where it is now. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena as well as the Shell Eco-Marathon. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. <!--Quick donations can be sent using the PayPal link below.--> Any sponsorship inquiries can be sent to <a href="mailto:muengrecoracing@missouri.edu">muengrecoracing@missouri.edu.</a></p>
 				<h4 class="heading-center">Thank you so much for your contribution!</h4>
-				
-				<div style="margin-top: 3%;">
-					<form id="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="UNZJ74CN9CMXQ">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
-				</div>
-						
 			</div>
 			
 			<div style="height: 50px;"></div>
