@@ -13,18 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="ecostyle.css"> <!-- IMPORTS EXTERNAL STYLE SHEET -->
 	</head>
 	
-	<script>
-		//Uses javascript to center PayPal div
-		function CenterPayPal() {
-			var num = (document.getElementById('paypal-well').clientWidth / 2) - (147 / 2);
-			var pad = num.toString() + "px";
-			document.getElementById('paypalform').style.paddingLeft = pad;
-			document.getElementById('paypalform').style.paddingRight = pad;
-		}
-	</script>
 	
-	
-	<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="CenterPayPal()" onResize="CenterPayPal()">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		
 		<!-- PAGE HEADER WITH LOGO AND PATTERN BACKGROUND bg-header -->
 		<nav class="navbar navbar-default bg-index">
@@ -275,16 +265,6 @@
 				</div>
 				<p class="p-well">Building a Formula SAE electric racecar and a hydrogen vehicle are expensive tasks. Thanks to the sponsors above, we were able to successfully build our team to where it is now. Please considering joining them in sponsoring our new competition build team as we dive head first into the FSAE Electric arena as well as the Shell Eco-Marathon. Any help is greatly appreciated, whether it is in the form of products, services, or just cold hard cash. <!--Quick donations can be sent using the PayPal link below.--> Any sponsorship inquiries can be sent to <a href="mailto:muengrecoracing@missouri.edu">muengrecoracing@missouri.edu.</a></p>
 				<h4 class="heading-center">Thank you so much for your contribution!</h4>
-				
-				<div style="margin-top: 3%;">
-					<form id="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="UNZJ74CN9CMXQ">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
-				</div>
-						
 			</div>
 			
 			<div style="height: 50px;"></div>
