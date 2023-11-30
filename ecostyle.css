@@ -451,3 +451,24 @@ p {
 	margin-right: 5%;
 }
 
+.notice {
+	text-align: center;
+	background-color: rgb(37, 37, 37);
+	margin: 100px 400px 100px 400px;
+	border: solid 2px rgb(184, 184, 184);
+	border-radius: 20px;
+}
+
+.electric-logo img{
+	width: 400px;
+	margin-bottom: 50px;
+}
+
+.electric-logo {
+	display: block;
+	margin: auto;
+}
+
+.notice-text {
+	padding-top: 50px;
+}
